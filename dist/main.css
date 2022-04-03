@@ -427,8 +427,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .relative {
   position: relative;
 }
+.top-1 {
+  top: 0.25rem;
+}
+.top-\[2px\] {
+  top: 2px;
+}
+.left-\[30px\] {
+  left: 30px;
+}
 .top-\[-50px\] {
   top: -50px;
+}
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
 }
 .my-5 {
   margin-top: 1.25rem;
@@ -438,8 +451,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
   margin-right: auto;
 }
-.mt-28 {
-  margin-top: 7rem;
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
 }
 .mt-5 {
   margin-top: 1.25rem;
@@ -453,6 +472,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden {
   display: none;
 }
+.h-7 {
+  height: 1.75rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
 .h-\[480px\] {
   height: 480px;
 }
@@ -462,11 +487,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[490px\] {
   height: 490px;
 }
+.w-14 {
+  width: 3.5rem;
+}
+.w-6 {
+  width: 1.5rem;
+}
 .w-96 {
   width: 24rem;
 }
 .w-80 {
   width: 20rem;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .flex-col {
   flex-direction: column;
@@ -474,29 +508,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center {
   justify-content: center;
 }
+.rounded-full {
+  border-radius: 9999px;
+}
 .rounded-xl {
   border-radius: 0.75rem;
 }
 .rounded-lg {
   border-radius: 0.5rem;
 }
-.rounded {
-  border-radius: 0.25rem;
-}
 .border-transparent {
   border-color: transparent;
-}
-.bg-emerald-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 150 105 / var(--tw-bg-opacity));
-}
-.bg-\[\#B4B3C6\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(180 179 198 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-\[\#B4B3C6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(180 179 198 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -505,19 +535,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-from: #A2A8F0;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(162 168 240 / 0));
 }
-.from-emerald-600 {
-  --tw-gradient-from: #059669;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(5 150 105 / 0));
-}
-.from-transparent {
-  --tw-gradient-from: transparent;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
-}
 .to-\[\#696FDD\] {
   --tw-gradient-to: #696FDD;
-}
-.to-emerald-600 {
-  --tw-gradient-to: #059669;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -561,6 +580,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .tracking-\[3px\] {
   letter-spacing: 3px;
 }
+.text-\[\#6D708D\] {
+  --tw-text-opacity: 1;
+  color: rgb(109 112 141 / var(--tw-text-opacity));
+}
 .text-\[\#B4B3C6\] {
   --tw-text-opacity: 1;
   color: rgb(180 179 198 / var(--tw-text-opacity));
@@ -570,71 +593,43 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 /* Project Personalisation */
-
+.buttonAnimation {
+    left: 2px;
+}
+.hiddenPrice {
+    display: block;
+}
+.togglePrice {
+    display: none;
+}
 .hover\:border-2:hover {
   border-width: 2px;
 }
-
-.hover\:border:hover {
-  border-width: 1px;
-}
-
-.hover\:border-4:hover {
-  border-width: 4px;
-}
-
-.hover\:border-0:hover {
-  border-width: 0px;
-}
-
 .hover\:border-solid:hover {
   border-style: solid;
 }
-
-.hover\:border-white:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .hover\:border-\[\#696FDD\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(105 111 221 / var(--tw-border-opacity));
 }
-
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
 .hover\:bg-emerald-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(5 150 105 / var(--tw-bg-opacity));
 }
-
-.hover\:bg-inherit:hover {
-  background-color: inherit;
-}
-
-.hover\:bg-transparent:hover {
-  background-color: transparent;
-}
-
 .hover\:bg-gradient-to-r:hover {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
-
-.hover\:bg-gradient-to-t:hover {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
 .hover\:from-white:hover {
   --tw-gradient-from: #fff;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
 }
-
 .hover\:to-white:hover {
   --tw-gradient-to: #fff;
 }
-
-.hover\:font-\[\#696FDD\]:hover {
-  font-family: #696FDD;
-}
-
 .hover\:text-\[\#696FDD\]:hover {
   --tw-text-opacity: 1;
   color: rgb(105 111 221 / var(--tw-text-opacity));

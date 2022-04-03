@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 /* Project Personalisation */
+.buttonAnimation {
+    left: 2px;
+}
+.hiddenPrice {
+    display: block;
+}
+.togglePrice {
+    display: none;
+}

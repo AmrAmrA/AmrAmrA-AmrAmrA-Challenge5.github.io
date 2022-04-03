@@ -22,24 +22,35 @@
  
     <h1 class="text-4xl
     text-center
-    mt-28
+    mt-10
+    mb-10
     font-bold
-    tracking-wide">  Our Pricing </h1>
+    tracking-wide
+    text-[#6D708D]">  Our Pricing </h1>
 
-    <ul class="prices_choices">
-      <li>    Annually </li>
-      <li>   </li>
-      <li>  Monthly </li>
+    <ul class="prices_choices
+    flex
+    justify-center
+    font-bold
+    mb-20">
+      <li class="text-[#B4B3C6] relative top-1"> Annually </li>
+      <li class="w-14 h-7 
+      bg-gradient-to-r from-[#A2A8F0] to-[#696FDD] 
+      rounded-full cursor-pointer mx-7 buttonToggle"> <p class="bg-white rounded-full w-6 h-6 relative top-[2px] left-[30px] buttonMove">  
+
+      </p> </li>
+      <li class="text-[#B4B3C6] relative top-1"
+      >  Monthly </li>
     </ul>
 
     <section class="card_pricing">
 
       <ul class="flex justify-center">
-        <li class = "flex-col text-center w-96 h-[480px] rounded-xl bg-white">   
+        <li class = "flex-col text-center w-96 h-[480px] rounded-xl bg-white ">   
           <p class= "font-black  text-xl pt-10 pb-3 text-[#B4B3C6]"> Basic </p>
-          <p class = "font-black text-5xl my-5 text-[#B4B3C6]"> &dollar;19.99</p>
-          <hr class="mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6]">
-          <p class="hidden"> &dollar;199.99</p>
+          <p class = "font-black text-5xl my-5 text-[#B4B3C6] priceVisible"> &dollar;19.99</p>
+          <hr class="mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6] toggleHR">
+          <p class="hidden font-black text-5xl my-5 text-[#B4B3C6] priceInvisible"> &dollar;199.99</p>
           <hr class="mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6]">
           <p class = "my-5 font-black text-[#B4B3C6]">500 GB Storage</p>
           <hr class="mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6]">
@@ -60,9 +71,10 @@
         bg-gradient-to-r from-[#A2A8F0] to-[#696FDD] 
         w-96 h-[490px] rounded-xl relative top-[-50px]">     
           <p  class= "font-black text-xl pt-10 pb-3"> Professional</p>
-          <p class = "font-black text-5xl my-5"> &dollar;24.99</p>
+          <p class = "font-black text-5xl my-5 priceVisible"> &dollar;24.99</p>
+          <hr class= "mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6] toggleHR">
+          <p  class="hidden font-black text-5xl my-5 priceInvisible"> &dollar;249.99</p>
           <hr class= "mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6]">
-          <p  class="hidden"> &dollar;249.99</p>
           <p class = "my-5 font-black"> 1 TB Storage</p>
           <hr class= "mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6]">
           <p class = "my-5 font-black"> 5 Users Allowed</p>
@@ -78,9 +90,9 @@
         <li class = "flex-col text-center w-96 h-[480px] rounded-xl bg-white ">
           <p class= "font-black text-xl pt-10 pb-3 text-[#B4B3C6]
           "> Master </p>
-          <p class = "font-black text-5xl mt-5 mb-12 text-[#B4B3C6]"> &dollar;39.99 </p>
-          <hr class="mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6]">
-          <p class="hidden"> &dollar;399.99 </p>
+          <p class = "font-black text-5xl my-5 text-[#B4B3C6] priceVisible"> &dollar;39.99 </p>
+          <hr class="mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6] toggleHR">
+          <p class="hidden font-black text-5xl my-5 text-[#B4B3C6]  priceInvisible"> &dollar;399.99 </p>
           <hr class="mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6]">
           <p class = "my-5 font-black text-[#B4B3C6]"> 2 TB Storage </p>
           <hr class="mx-auto w-80 opacity-90 border-transparent bg-[#B4B3C6]">
@@ -104,4 +116,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+  <script src="app.js"></script>
 </html>
